@@ -1,0 +1,17 @@
+{
+    "image2": {
+        "data": "hwQPABAAAAAAwAAAzMwAAAC8zMzbvQwAANzd3c3cywAA3ETU3d3NDADAu9vd1M0LALzM3N3dzQsA3N3dzdzNDAC8RNTd3csLAADMzN3dvQwAAMDb3czLDAAAwN3NvbwMAAAc0d3dvQwAABzR3d3LDAAAwLzdvQwAAAAAwMzMAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Smaller Rabbit - 15x16"
+    },
+    "image1": {
+        "data": "hwQhABAAAAAAwAAAzMwAAAC8zMzbvQwAANzd3c3cywAA3ETU3d3NDADAu9vd1M3LALzM3N3dzcsA3N3dzdzNDAC8RNTd3cvLAMDb3d3d3MsAAMzM3d29DAAAwNvdzMsMAADA3c29vAwAABzR3d29DAAAHNHd3csMAADAvN29DAAAAADAzMwAAP//////////AAAAwMzMAAAAAMC83b0MAAAAHNHd3csMAAAc0d3dvQwAAMDdzb28DAAAwNvdzMsMAADMzN3dvQwAwNvd3d3cywC8RNTd3cvLANzd3c3czQwAvMzc3d3NywDAu9vd1M3LANxE1N3dzQwA3N3dzdzLAAC8zMzbvQwAAMAAAMzMAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Rabbits"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
