@@ -9,6 +9,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Rabbits"
     },
+    "image5": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7AAAAAAAAAFvLzAwAAAAAW71VDAAAALBVVd0MAAAAW1VVzQAAAABbEVXNAAAAALARVd0MAAAAAFu9VQwAAAAAW8vMDAAAAAC7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Star Icon"
+    },
+    "image4": {
+        "data": "hwQQAA4AAAAAAAAAAAD/AAAA/wzw//wAAMy/y8/M+wDA0czLz8z7AMAd3b/8zPsAHNHd3/u8+wAcEd3f+7z7ABwR0d/73PsAHxER3Pvc+wAfERHc+9z7ABwREdz73PsA8NHBvc/d+wAA39zLu9v7AADAvfzP2/sAAADMD/D/+wAAAAAAAAD/AA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Wheat Icon"
+    },
+    "image6": {
+        "data": "hwQQAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAD/AAAAAAAA8PAAAAAAAADw8AAAAAAA8A/wAAAAAAD/APAAAAAAAP//8AAAAAAAAAD/////AAAAAPAAAAAAAAAA8AAAAAAAAADwAAAAAAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "_"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAPAP///wAA3/fw3d1E/wB/Z99ORE5ED/D/L05ORC7y32cvIi4iLg9/9vAiIiL/APAPAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Carrot Counter Icon"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",

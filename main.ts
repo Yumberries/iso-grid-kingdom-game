@@ -174,6 +174,117 @@ function Slippery_Bunny (Switch: boolean) {
         }
     }
 }
+browserEvents.Q.onEvent(browserEvents.KeyEvent.Pressed, function () {
+    In_Menu = true
+    Invintory_Menu = miniMenu.createMenu(
+    miniMenu.createMenuItem("Carrots", assets.image`Carrot Counter Icon`),
+    miniMenu.createMenuItem("Stars", assets.image`Star Icon`),
+    miniMenu.createMenuItem("Wheat", assets.image`Wheat Icon`),
+    miniMenu.createMenuItem("Thing #4", assets.image`_`),
+    miniMenu.createMenuItem("Thing #5", img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f . . . . . . . . . . 
+        . . . . . f . . . . . . . . . . 
+        . . . . . f . . . . . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . . f . . . f f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . f f . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `),
+    miniMenu.createMenuItem("Thing #6", img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . f . . . . . . 
+        . . . . . . . . f . . . . . . . 
+        . . . . . . . f . . . . . . . . 
+        . . . . . . f . . . . . . . . . 
+        . . . . f f . . . . . . . . . . 
+        . . . f f . . . . . . . . . . . 
+        . . . f . . . . . . . . . . . . 
+        . . f . f f f f f f . . . . . . 
+        . . f f . . . . . f . . . . . . 
+        . . f . . . . . . f f . . . . . 
+        . . f . . . . . . . f . . . . . 
+        . . f . . . . . . f . . . . . . 
+        . . . f f f f f f . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `),
+    miniMenu.createMenuItem("Thing #7", img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . f f f f f f f . . . 
+        . . . . . . . . . . . . f . . . 
+        . . . . . . . . . . . f . . . . 
+        . . . . . . . . . . . f . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . f . . . . . . 
+        . . . . . . . . f . . . . . . . 
+        . . . . . . . f . . . . . . . . 
+        . . . . . . . f . . . . . . . . 
+        . . . . . . f f . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `),
+    miniMenu.createMenuItem("Thing #8", img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . f f . . f f f f f . . . 
+        . . f f . . . . . . . . f . . . 
+        . . f . . . . . . . . . f . . . 
+        . . f f f f f . . f f f . . . . 
+        . . . . . . f f f f . . . . . . 
+        . . . f f f . . . . f . . . . . 
+        . . f . . . . . . . f . . . . . 
+        . . f . . . . . . . f . . . . . 
+        . . f . . . . . . f f . . . . . 
+        . . f . . . . . . f . . . . . . 
+        . . f f f . . f f f . . . . . . 
+        . . . . . f f . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `),
+    miniMenu.createMenuItem("Thing #9", img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . f f f f f f f . . . . 
+        . . . . f f . . . . . f . . . . 
+        . . . . f . . . . . . f . . . . 
+        . . . . f . . . . . f f . . . . 
+        . . . . f . . . . . f f . . . . 
+        . . . . f f . . . f f f . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . f . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `)
+    )
+    Invintory_Menu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Width, 140)
+    Invintory_Menu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Height, 150)
+    Invintory_Menu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Rows, 4)
+    Invintory_Menu.setMenuStyleProperty(miniMenu.MenuStyleProperty.Columns, 6)
+    Invintory_Menu.setStyleProperty(miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Background, 5)
+    Invintory_Menu.setStyleProperty(miniMenu.StyleKind.DefaultAndSelected, miniMenu.StyleProperty.IconOnly, 1)
+    Invintory_Menu.top = 10
+    Invintory_Menu.right = 150
+    Invintory_Menu.setTitle("Carrots")
+    Invintory_Menu.onSelectionChanged(function (selection, selectedIndex) {
+        Invintory_Menu.setTitle(selection)
+    })
+})
 sprites.onOverlap(SpriteKind.Food, SpriteKind.Food, function (sprite, otherSprite) {
     timer.throttle("Stabilize Wheat", 1, function () {
         if (sprite.y > otherSprite.y) {
@@ -345,15 +456,17 @@ let Wheat_Y = 0
 let Wheat_X = 0
 let Enemy_Y = 0
 let Enemy_X = 0
-let mySprite2: Sprite = null
 let Random = 0
+let mySprite2: Sprite = null
 let Wheat: Sprite = null
+let Invintory_Menu: miniMenu.MenuSprite = null
 let Carrot_Weapon: Sprite = null
 let Direction = ""
 let Tiling_Sprite: Sprite = null
 let Y = 0
 let X = 0
 let Tile: Image = null
+let In_Menu = false
 let Enemy_Spawned = 0
 let mySprite: Sprite = null
 Make_Grid()
@@ -378,82 +491,99 @@ mySprite = sprites.create(img`
 Enemy_Spawned = 0
 controller.moveSprite(mySprite)
 mySprite.setFlag(SpriteFlag.ShowPhysics, true)
+In_Menu = false
 game.onUpdate(function () {
     Check_Direction()
 })
-game.onUpdateInterval(randint(5000, 100000), function () {
-    if (Enemy_Spawned == 0) {
-        Random = randint(0, 35)
-        mySprite2 = sprites.create(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . b . . . . . . . 
-            . . . . . . . b d b . . . . . . 
-            . . . . . . b 5 5 5 b . . . . . 
-            . . . . . b b 5 5 5 b b . . . . 
-            . . b b b b 5 5 5 1 1 b b b b . 
-            . . b 5 5 5 5 f 5 f 1 5 5 5 b . 
-            . . b d d 5 5 5 5 5 5 5 d d b . 
-            . . . b d d 5 5 5 5 5 d d b . . 
-            . . . c b 5 5 5 5 5 5 5 b c . . 
-            . . . c b 5 5 5 5 5 5 5 b c . . 
-            . . . c 5 5 d d b d d 5 5 c . . 
-            . . . c 5 d d c c c d d 5 c . . 
-            . . . c c c c . . . c c c c . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            `, SpriteKind.Enemy)
-        Enemy_X = (Random - Random % 6) / 6
-        Enemy_Y = Random % 6
-        mySprite2.setPosition((Enemy_Y - Enemy_X) * 12.5 + 80, (Enemy_X + Enemy_Y) * 6 + 18)
+game.onUpdate(function () {
+    if (In_Menu == true) {
+        controller.moveSprite(mySprite, 0, 0)
+        for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+            value.follow(mySprite, 0)
+        }
+    } else if (Enemy_Spawned == 1) {
         mySprite2.follow(mySprite, randint(20, 35))
-        Enemy_Spawned = 1
+    } else {
+        controller.moveSprite(mySprite, 100, 100)
     }
+    timer.throttle("Spawn Enemy", randint(5000, 100000), function () {
+        if (In_Menu == false) {
+            if (Enemy_Spawned == 0) {
+                Random = randint(0, 35)
+                mySprite2 = sprites.create(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . b . . . . . . . 
+                    . . . . . . . b d b . . . . . . 
+                    . . . . . . b 5 5 5 b . . . . . 
+                    . . . . . b b 5 5 5 b b . . . . 
+                    . . b b b b 5 5 5 1 1 b b b b . 
+                    . . b 5 5 5 5 f 5 f 1 5 5 5 b . 
+                    . . b d d 5 5 5 5 5 5 5 d d b . 
+                    . . . b d d 5 5 5 5 5 d d b . . 
+                    . . . c b 5 5 5 5 5 5 5 b c . . 
+                    . . . c b 5 5 5 5 5 5 5 b c . . 
+                    . . . c 5 5 d d b d d 5 5 c . . 
+                    . . . c 5 d d c c c d d 5 c . . 
+                    . . . c c c c . . . c c c c . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, SpriteKind.Enemy)
+                Enemy_X = (Random - Random % 6) / 6
+                Enemy_Y = Random % 6
+                mySprite2.setPosition((Enemy_Y - Enemy_X) * 12.5 + 80, (Enemy_X + Enemy_Y) * 6 + 18)
+                mySprite2.follow(mySprite, randint(20, 35))
+                Enemy_Spawned = 1
+            }
+        }
+    })
 })
 game.onUpdateInterval(500, function () {
-    Random = randint(0, 35)
-    Wheat = sprites.create(img`
-        ........................55........................
-        ......................555555......................
-        ....................5555555555....................
-        ..................55555555555555..................
-        ................555555555555555555................
-        ..............5555555555555555555555..............
-        ............55555555555455555555555555............
-        ..........555555555555554555555555555555..........
-        ........5555555555555555555555555555555555........
-        ......55555555555555555555555555555555555555......
-        ....555555555555555455555555545555555455555555....
-        ..5555555555555555545555555554555555545555555555..
-        55555545555554555555555555555455555555555555555555
-        55555555555554555555555555555455555555555555555555
-        55545555555555555555555555555555555555555455455555
-        45544555555555555555555545555555555555555455445545
-        45544555555555555555555545555555555445555455445445
-        44544545545455555555555555555555555445554444445444
-        44444444444445555555555555555555555444554444444444
-        44444444444445555555555555555545554444454444444444
-        44444444444445445455555555555544544444454444444444
-        44444444444444445445555555555444444444444444444444
-        44444444444444444445545554555444444444444444444444
-        44444444444444444444545454454444444444444444444444
-        44444444444444444444444454444444444444444444444444
-        44444444444444444444444444444444444444444444444444
-        ff4444444444444444444444444444444444444444444444ff
-        ..ff444444444444444444444444444444444444444444ff..
-        ....ff44444444444444444444444444444444444444ff....
-        ......ff4444444444444444444444444444444444ff......
-        ........ff444444444444444444444444444444ff........
-        ..........ff44444444444444444444444444ff..........
-        ............ff4444444444444444444444ff............
-        ..............ff444444444444444444ff..............
-        ................ff44444444444444ff................
-        ..................ff4444444444ff..................
-        ....................ff444444ff....................
-        ......................ff44ff......................
-        ........................ff........................
-        `, SpriteKind.Food)
-    Wheat.setScale(0.5, ScaleAnchor.Middle)
-    Wheat_X = (Random - Random % 6) / 6
-    Wheat_Y = Random % 6
-    Wheat.setPosition((Wheat_Y - Wheat_X) * 12.5 + 80, (Wheat_X + Wheat_Y) * 6 + 21)
+    if (In_Menu == false) {
+        Random = randint(0, 35)
+        Wheat = sprites.create(img`
+            ........................55........................
+            ......................555555......................
+            ....................5555555555....................
+            ..................55555555555555..................
+            ................555555555555555555................
+            ..............5555555555555555555555..............
+            ............55555555555455555555555555............
+            ..........555555555555554555555555555555..........
+            ........5555555555555555555555555555555555........
+            ......55555555555555555555555555555555555555......
+            ....555555555555555455555555545555555455555555....
+            ..5555555555555555545555555554555555545555555555..
+            55555545555554555555555555555455555555555555555555
+            55555555555554555555555555555455555555555555555555
+            55545555555555555555555555555555555555555455455555
+            45544555555555555555555545555555555555555455445545
+            45544555555555555555555545555555555445555455445445
+            44544545545455555555555555555555555445554444445444
+            44444444444445555555555555555555555444554444444444
+            44444444444445555555555555555545554444454444444444
+            44444444444445445455555555555544544444454444444444
+            44444444444444445445555555555444444444444444444444
+            44444444444444444445545554555444444444444444444444
+            44444444444444444444545454454444444444444444444444
+            44444444444444444444444454444444444444444444444444
+            44444444444444444444444444444444444444444444444444
+            ff4444444444444444444444444444444444444444444444ff
+            ..ff444444444444444444444444444444444444444444ff..
+            ....ff44444444444444444444444444444444444444ff....
+            ......ff4444444444444444444444444444444444ff......
+            ........ff444444444444444444444444444444ff........
+            ..........ff44444444444444444444444444ff..........
+            ............ff4444444444444444444444ff............
+            ..............ff444444444444444444ff..............
+            ................ff44444444444444ff................
+            ..................ff4444444444ff..................
+            ....................ff444444ff....................
+            ......................ff44ff......................
+            ........................ff........................
+            `, SpriteKind.Food)
+        Wheat.setScale(0.5, ScaleAnchor.Middle)
+        Wheat_X = (Random - Random % 6) / 6
+        Wheat_Y = Random % 6
+        Wheat.setPosition((Wheat_Y - Wheat_X) * 12.5 + 80, (Wheat_X + Wheat_Y) * 6 + 21)
+    }
 })
